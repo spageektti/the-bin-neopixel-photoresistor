@@ -32,20 +32,15 @@
   "connections": [
     [ "pico:GP0", "$serialMonitor:RX", "", [] ],
     [ "pico:GP1", "$serialMonitor:TX", "", [] ],
-    [
-      "wokwi-neopixel-0:DIN",
-      "pico:GP0",
-      "green",
-      [ "h47.2", "v86.4", "h-38.4", "v9.6", "h48", "v-19.2" ]
-    ],
     [ "wokwi-slide-potentiometer-0:VCC", "vcc1:VCC", "red", [ "v-182.4", "h-288", "v19.2" ] ],
     [ "wokwi-slide-potentiometer-0:GND", "gnd1:GND", "black", [ "v53.2", "h-124.8" ] ],
-    [ "wokwi-slide-potentiometer-0:SIG", "pico:GP27", "green", [ "v0" ] ],
+    [ "wokwi-slide-potentiometer-0:SIG", "pico:GP27", "cyan", [ "v0" ] ],
     [ "vcc1:VCC", "wokwi-neopixel-0:VSS", "red", [ "v9.6", "h-163.2", "v86.4" ] ],
     [ "gnd1:GND", "wokwi-neopixel-0:VDD", "black", [ "v-67.2", "h-278.4", "v124.8" ] ],
     [ "wokwi-photoresistor-sensor-0:VCC", "vcc1:VCC", "red", [ "h211.2", "v-288", "h-19.2" ] ],
     [ "wokwi-photoresistor-sensor-0:GND", "gnd1:GND", "black", [ "h259.2", "v-365.2" ] ],
-    [ "wokwi-photoresistor-sensor-0:AO", "pico:GP26", "green", [ "h297.6", "v-231.1" ] ]
+    [ "wokwi-photoresistor-sensor-0:AO", "pico:GP26", "limegreen", [ "h297.6", "v-231.1" ] ],
+    [ "pico:GP2", "wokwi-neopixel-0:DIN", "gold", [ "h-121.25", "v-32.05", "h67.2", "v-57.6" ] ]
   ],
   "dependencies": {}
 }
