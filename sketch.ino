@@ -24,9 +24,9 @@ void loop() {
 
   int brightness = map(sliderValue, 0, 4095, 0, 255);
 
-  int red = colorValue;
+  int red = 255 - colorValue;
   int green = 0;
-  int blue = 255 - colorValue;
+  int blue = colorValue;
 
   red = (red * brightness) / 255;
   green = (green * brightness) / 255;
